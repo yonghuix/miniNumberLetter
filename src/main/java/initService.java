@@ -5,6 +5,10 @@ import java.util.List;
 
 public class initService {
 
+     /**
+     * This method init number to digit mapping,
+     * @return list<string>.
+     */
     public List<keyboardDto> getInitList()
     {
         String[] letters={"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O",

@@ -39,7 +39,7 @@ public class Main {
 
                 List<String> result=combinationService.getCombination(combinationService.getDigitList(arrayData,Integer.parseInt(lefter)),
                         combinationService.getDigitList(arrayData,Integer.parseInt(righter)));
-                System.out.println(result);
+                System.out.println("Output:"+result);
             }
         } while(true);
         System.out.println("You input \"#\"，app exit！");
