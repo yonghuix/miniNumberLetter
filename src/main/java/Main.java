@@ -19,7 +19,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         do{
 
-            System.out.println(" You can input from 0 to 99,sample as 2,3");
+            System.out.println("You can input from 0 to 99,sample as 2,3");
             System.out.print("Input：arr[]=");
             String mInput=input.next();
 
@@ -31,15 +31,13 @@ public class Main {
                 System.out.println("Input error ,must input sample as 2,3");
             }
             else{
-                System.out.println("You input："+mInput);
 
                 String lefter=mInput.substring(0,k);
                 String righter=mInput.substring(k+1);
 
-
                 List<String> result=combinationService.getCombination(combinationService.getDigitList(arrayData,Integer.parseInt(lefter)),
                         combinationService.getDigitList(arrayData,Integer.parseInt(righter)));
-                System.out.println("Output:"+result);
+                System.out.println("Output: "+result);
             }
         } while(true);
         System.out.println("You input \"#\"，app exit！");
